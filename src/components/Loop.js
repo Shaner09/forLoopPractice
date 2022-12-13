@@ -35,7 +35,7 @@ function Loop(props) {
     <div className="DisplayHolder">
       <div className="Display">
         <u ref={codeTarget}>Code</u>
-        <div className="Code"><span ref={arrayTarget}>{`int[] array = new int[]{${array.toString()}};`}</span></div>
+        <div className="Code"><span ref={arrayTarget}>{`int[] array = new int[]{`}{array.map((el,i)=><span><span key = {i} style={{background:`${i===dLL[position]?.i ? "yellow" : "white"}`}}>{el}</span>{`${i === array.length-1 ? " " : ", "}`}</span>)}{`};`}</span></div>
         <div className="Code">
           {`for (`}<span ref={indexerTarget}>{`int i = `}
           <input
