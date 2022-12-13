@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.Code {
+  padding:10px;
+  text-align: left;
+}
+
+.Display {
+  margin: auto;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.DisplayHolder {
+  max-width: 600px;
+  padding: 10px;
+  margin: auto;
+}
