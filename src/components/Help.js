@@ -126,7 +126,7 @@ function Help(props) {
         placement={"left"}
         target={incrementorTarget}
         message={
-          "This also keeps our loop from running indefinitely. Without it, i would remain 0, and 0 would always be less than array.length in the condition, meaning the coondition would always be true. You can change this field to skip numbers in the array."
+          "This also keeps our loop from running indefinitely. Without it, i would remain 0, and 0 would always be less than array.length in the condition, meaning the condition would always be true. You can change this field to skip numbers in the array. ( i+=1; is shorthand for: i = i + 1; )"
         }
         tipCounter={tipCounter}
         showModal={showModal}
